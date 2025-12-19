@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); 
+            gap: 20px; 
+        }
+
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .product-card h3 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .product-card p {
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .product-card .price {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #e60000;
+        }
+
+        @media (min-width: 600px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 900px) {
+            .product-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Products</h1>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSGHQqZTsJ9t9k6WmV5sKgbv3-0HpeK3aWGlrqGjauhrQvbpzH6iNBIvnBDibYQt_nykVWXmgyugG-JNVcNLbyQIdLtjFesbPZS9F9E5y1zAOfBQ3QO0Dey" alt="Product 1">
+                <h3>Product One</h3>
+                <p>Ralph Lauren Men's Purple Label Suede Overshirt</p>
+                <span class="price">₹3,62,258.90</span>
+            </div>
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSSkXqh9A5mtgPzQn9U9Cgzq61qxDxuYCRYn5YwGNaQiBH8XNOF6CrFnkm-d_gkm1dTXaQBJJI97ZflIUkIQOJNRIsDpGvDj69Sk_IFrn_XMwamIbrkUd6hAw&usqp=CAc" alt="Product 2">
+                <h3>Product Two</h3>
+                <p>Polo Ralph Lauren.Felted Wool-Blend Overshirt</p>
+                <span class="price">₹56,100</span>
+            </div>
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSDP7o2ZK4TEcslOkgSAF1aErd2BcGs1Go5hVVQerOMFNbIKemmkFPgDbOo9KQ_VM47xI_NAYHYQ-bymfvGsrjnvTdVjAMRjtKjpDsnyu4-eTV4-cKu8r4-pzkNe-uSaRWNqmIo2qE&usqp=CAc" alt="Product 3">
+                <h3>Product Three</h3>
+                <p>Polo Ralph Lauren.Slim Fit Stretch Jean</p>
+                <span class="price">₹1,07,600</span>
+            </div>
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQrk-C36h0qIETmJB58SyI69rRANrapHi9eVH9bkD_yeKkj1rDxvwPYXXTnPt4pS8tUex11gEmgMBLLF0pNb_QraoyJz8AI2qSpowJ-ID-_qJdWVVzAL7wOHp-GQCC8IkxBHx8wjLdwikU&usqp=CAc" alt="Product 4">
+                <h3>Product Four</h3>
+                <p>BLEU DE CHANEL</p>
+                <span class="price">₹16,800</span>
+            </div>
+            <div class="product-card">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTJpx8iTZlo-P_Di3kPQw9mq4j_Do2FE8zTWZ6zmuwGXzusF6S7gqhqz5yHCWGRdLZJN1acVgrs2ADZ7-YqsP1cLsDyBa129miVrxDu0I3ScwFVs7vOh4kpeA" alt="Product 5">
+                <h3>Product Five</h3>
+                <p>BVLGARI Man in Black Eau De Parfum</p>
+                <span class="price">₹10,100</span>
+            </div>
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRUn-h3ZJfguHTYwzARR-dNqQHTIj_GCTdOg7_6I0bSDSyx5AAcKp2s31o9SvpXFPrmbhUBu5mtEwcPu_xLph-cwxrhylygwkY5gomTNrf5RAnfdLp_ppXkAPM69gxfnYgng8FGsCM3s18&usqp=CAc" alt="Product 6">
+                <h3>Product Six</h3>
+                <p>Gucci Oud Intense Perfumr For Men</p>
+                <span class="price">₹14,800</span>
+            </div>
+            <div class="product-card">
+                <img src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-1463753_lifestyle?$rl_1x1_pdp$" alt="Product 7">
+                <h3>Product Seven</h3>
+                <p>Darrow Calfskin Boot</p>
+                <span class="price">₹243,400</span>
+            </div>
+            <div class="product-card">
+                <img src="https://cms.brnstc.de/product_images/2244x3072p/cpro/media/images/product/24/10/100174108513000_0_1729668943236.webp" alt="Product 8">
+                <h3>Product Eight</h3>
+                <p>Chelsea boots ASHER</p>
+                <span class="price">₹27,290</span>
+            </div>
+            <div class="product-card">
+                <img src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-AI811974137001_lifestyle?$rl_1x1_pdp$" alt="Product 9">
+                <h3>Product Nine</h3>
+                <p>Aspra Suede Lace-Up Boot</p>
+                <span class="price">₹73,000</span>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
